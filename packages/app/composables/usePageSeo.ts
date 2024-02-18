@@ -13,12 +13,11 @@ export const usePageSeo = (named: Record<string, unknown> = {}): void => {
   named.country = useCountry() //automatically include the country ??
   named.domain = useDomain() //automatically include the domain ??
 
-  const robots = getSeoMeta('robots')
+  //const robots = getSeoMeta('robots')
   const title = getSeoMeta('title')
   const description = getSeoMeta('description')
 
   useSeoMeta({
-    robots: robots,
     title: title,
     description: description,
     ogTitle: title,

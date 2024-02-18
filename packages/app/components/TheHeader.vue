@@ -8,10 +8,10 @@
         <DevNavigation />
       </div>
       <div class="flex-none">
-        <TestI18n />
+        
       </div>
       <div class="flex-none">
-        <ChangeLocale />
+        
       </div>
     <div class="flex-none">
       <ChangeColorMode />

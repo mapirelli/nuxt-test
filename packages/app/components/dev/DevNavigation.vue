@@ -1,5 +1,4 @@
 <template>
-  <TemplateRoot>
     <nav>
       <ul class="flex items-center divide-x divide-gray-400 dark:divide-gray-600">
         <li>
@@ -13,7 +12,6 @@
         </li>
       </ul>
     </nav>
-  </TemplateRoot>
 </template>
 
 <script lang="ts" setup></script>

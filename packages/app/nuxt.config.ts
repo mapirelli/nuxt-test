@@ -24,7 +24,7 @@ export default defineNuxtConfig({
     strategy: 'no_prefix', // we use our router instead, this will raise a warning message, dont warry about that
     //vueI18n: './config/i18n.config.ts',
     baseUrl: process.env.DOMAIN_IT,
-    differentDomains: true,
+    differentDomains: false,
     detectBrowserLanguage: false,
     skipSettingLocaleOnNavigate: true,
     lazy: true, //https://i18n.nuxtjs.org/guide/lazy-load-translations#lazy-configuration-options
@@ -36,28 +36,24 @@ export default defineNuxtConfig({
         code: 'it',
         iso: 'it-IT',
         files: ['it-IT.json', { path: 'seo/it-IT.ts'}],
-        domain: process.env.DOMAIN_IT,
       },
       {
         name: 'España',
         code: 'es',
         iso: 'es-ES',
         files: ['es-ES.json', { path: 'seo/es-ES.ts'}],
-        domain: process.env.DOMAIN_ES,
       },
       {
         name: 'Deutchland',
         code: 'de',
         iso: 'de-DE',
         files: ['de-DE.json', { path: 'seo/de-DE.ts'}],
-        domain: process.env.DOMAIN_DE,
       },
       {
         name: 'Great Britain',
         code: 'en',
         iso: 'en-GB',
         files: ['en-GB.json', { path: 'seo/en-GB.ts'}],
-        domain: process.env.DOMAIN_UK,
       },
     ],
   },
