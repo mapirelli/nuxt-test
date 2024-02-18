@@ -1,0 +1,25 @@
+{
+  "name": "enterprise-mono-repo",
+  "version": "1.0.0",
+  "description": "Enterprise monorepo project",
+  "scripts": {
+    "build": "pnpm --filter ./packages/app build",
+    "dev": "pnpm --filter ./packages/app dev",
+    "generate": "pnpm --filter ./packages/app generate",
+    "preview": "pnpm --filter ./packages/app preview",
+    "playground": "pnpm --filter ./packages/playground dev",
+    "format": "prettier --check .",
+    "lint": "eslint --ext .ts,.vue --ignore-path .gitignore .",
+    "format:fix": "prettier --write --list-different .",
+    "lint:fix": "eslint --ext .ts,.vue --ignore-path .gitignore . --fix"
+  },
+  "devDependencies": {
+    "@nuxt/eslint-config": "^0.2.0",
+    "dotenv-cli": "^7.3.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-storybook": "^0.6.15",
+    "prettier": "^3.2.4",
+    "prettier-plugin-tailwindcss": "^0.5.11"
+  }
+}
